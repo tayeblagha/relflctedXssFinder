@@ -1,0 +1,5 @@
+https://equitytower.co.id/gallery-detail.php?id=FUZZ
+http://equitytower.co.id/gallery-detail.php?id=FUZZ
+http://equitytower.co.id/news-event-detail.php?id=FUZZ
+http://www.equitytower.co.id:80/news-event-detail.php?id=FUZZ
+https://equitytower.co.id/news-event-detail?id=FUZZ
