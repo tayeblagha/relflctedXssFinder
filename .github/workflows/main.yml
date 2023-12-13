@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
     - name: Update system
       run: |
         sudo apt-get -y update
@@ -34,4 +37,12 @@ jobs:
 
     - name: Install Python dependencies
       run: |
-        ls
+        pip3 install -r ./requirements.txt
+
+    - name: Run paramspider and Gxss
+      run: |
+        python paramspider.py --domain att.com | Gxss -c 100 -p Xss
+
+    - name: Deactivate Python Virtual Environment
+      run: |
+        deactivate
