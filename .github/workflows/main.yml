@@ -20,26 +20,5 @@ jobs:
     - name: Build and Install dalfox
       run: |
         go install github.com/hahwul/dalfox/v2@latest
-        sudo cp /root/go/bin/dalfox /usr/local/bin
-
-    - name: Build and Install Gxss
-      run: |
-        go install github.com/KathanP19/Gxss@latest
-        sudo cp /root/go/bin/Gxss /usr/local/bin
-
-    - name: Setup Python Virtual Environment
-      run: |
-        python3 -m venv venv
-        source venv/bin/activate
-
-    - name: Install Python dependencies
-      run: |
-        pip3 install -r requirements.txt
-
-    - name: Run paramspider and Gxss
-      run: |
-        python paramspider.py --domain att.com | Gxss -c 100 -p Xss
-
-    - name: Deactivate Python Virtual Environment
-      run: |
-        deactivate
+        go env GOPATH
+       
