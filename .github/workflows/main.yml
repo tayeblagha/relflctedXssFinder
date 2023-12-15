@@ -41,7 +41,7 @@ jobs:
 
     - name: Run paramspider and Gxss
       run: |
-        python paramspider.py --domain sofrecom.com | Gxss -c 100 -p Xss | while read url ; do dalfox url $url  ; done
+        python paramspider.py --domain welyne.com | Gxss -c 100 -p Xss | while read url ; do dalfox url $url  ; done
 
     - name: Deactivate Python Virtual Environment
       run: |
