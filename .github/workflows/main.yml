@@ -41,7 +41,7 @@ jobs:
 
     - name: Run paramspider and Gxss
       run: |
-        python paramspider.py --domain grammarly.com | Gxss -c 100 -p Xss 
+        python paramspider.py --domain be-softilys.com | Gxss -c 100 -p Xss 
 
     - name: Deactivate Python Virtual Environment
       run: |
