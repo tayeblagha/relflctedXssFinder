@@ -41,10 +41,9 @@ jobs:
 
     - name: Run paramspider and Gxss
       run: |
-        #python paramspider.py --domain paypal.com | Gxss -c 100 -p Xss
-        dalfox url https://primatec.tn/wp-login.php?redirect_to=Xss
+        python paramspider.py --domain paypal.com | Gxss -c 100 -p Xss
+        
 
     - name: Deactivate Python Virtual Environment
       run: |
-        dalfox url https://primatec.tn/?s=Xss
         deactivate
