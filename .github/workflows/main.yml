@@ -41,7 +41,7 @@ jobs:
 
     - name: Run paramspider and Gxss
       run: |
-        python paramspider.py --domain paypal.com | Gxss -c 100 -p Xss
+        python paramspider.py --domain decade.fr | Gxss -c 100 -p Xss
         
 
     - name: Deactivate Python Virtual Environment
